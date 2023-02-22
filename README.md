@@ -1,5 +1,4 @@
 # The Titan
-
 The Titan is a keyboard for playing video games, particularly but not exclusively fighting games. The design mixes in bits of the Sega Saturn controller (hence I named it after one of Saturn’s moons) and Hitbox controllers.
 
 ## Bill of Materials
@@ -27,16 +26,16 @@ The Titan is a keyboard for playing video games, particularly but not exclusivel
 
 ## Firmware
 You can find a .hex file of the default Titan firmware in this repository. If you don’t have any need to customize the layout, you can just download this and flash it to your Pro Micro.
-7. Install QMK Toolbox if you haven’t already.
-8. Open titan_default.hex.
-9. Click the “Auto-Flash” checkbox.
-10. Plug the Pro Micro into your computer.
-11. Bridge the GND and RST pins with a metal object (or if it’s already soldered in place, press the reset switch).
-12. QMK Toolbox should automatically flash the firmware for you!
+1. Install QMK Toolbox if you haven’t already.
+2. Open titan_default.hex.
+3. Click the “Auto-Flash” checkbox.
+4. Plug the Pro Micro into your computer.
+5. Bridge the GND and RST pins with a metal object (or if it’s already soldered in place, press the reset switch).
+6. QMK Toolbox should automatically flash the firmware for you!
 
 If you do want to customize the firmware:
-6. Copy the “titan” folder from the firmware folder here into the “keyboards” folder of your QMK installation. You can modify the files in this folder as desired.
-7. Open a terminal window (for your OS if you’re using macOS or Linux, or QMK MSYS if you’re using windows).
-8. Navigate to the QMK folder (typically cd qmk_firmware).
-9. Type “make titan:default” (or replace “default” with the name of your new keymap) and it should compile.
-10. Type “make titan:default:flash (or replace flash with “dfu”) to flash it.
+1. Copy the “titan” folder from the firmware folder here into the “keyboards” folder of your QMK installation. You can modify the files in this folder as desired.
+2. Open a terminal window (for your OS if you’re using macOS or Linux, or QMK MSYS if you’re using windows).
+3. Navigate to the QMK folder (typically `cd qmk_firmware`).
+4. Type “`make titan:default`” (or replace “default” with the name of your new keymap) and it should compile.
+5. Type “`make titan:default:flash`" (or replace flash with “`dfu`”) to flash it.
