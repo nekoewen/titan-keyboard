@@ -35,7 +35,7 @@ You can find a .hex file of the default Titan firmware in this repository. If yo
 
 If you want to customize the firmware:
 1. Copy the “titan” folder from the firmware folder here into the “keyboards” folder of your QMK installation. You can modify the files in this folder as desired.
-2. Open a terminal window (for your OS if you’re using macOS or Linux, or QMK MSYS if you’re using windows).
+2. Open a terminal window (for your OS if you’re using macOS or Linux, or [QMK MSYS](https://msys.qmk.fm/) if you’re using Windows).
 3. Navigate to the QMK folder (typically `cd qmk_firmware`).
 4. Type “`make titan:default`” (or replace “default” with the name of your new keymap) and it should compile.
 5. Type “`make titan:default:flash`" (or replace flash with “`dfu`”) to flash it.
