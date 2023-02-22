@@ -9,7 +9,7 @@ The Titan is a QMK-powered keyboard for playing video games, particularly but no
 - 9x M2 standoffs
 - 18x M2 screws
 - 4 or more adhesive rubber feet
-- 2-pin tactile reset switch (optional)
+- 2-pin reset switch (optional; 3x6x2mm DIP-2P switch, the same kind used on the Corne keyboard)
 - EC11 encoder switch with knob (optional)
 - WS2182B LED strip and 3 wires (optional)
 
