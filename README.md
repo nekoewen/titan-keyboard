@@ -1,7 +1,8 @@
 # The Titan
 
-## The Titan is a keyboard for playing video games, particularly but not exclusively fighting games. The design mixes in bits of the Sega Saturn controller (hence I named it after one of Saturn’s moons) and Hitbox controllers.
-Bill of Materials
+The Titan is a keyboard for playing video games, particularly but not exclusively fighting games. The design mixes in bits of the Sega Saturn controller (hence I named it after one of Saturn’s moons) and Hitbox controllers.
+
+## Bill of Materials
 - Pro Micro (or a compatible microcontroller, such as an Elite-C, BIT-C, KB2040, etc.) with headers
 - 17 through-hole diodes
 - 17 key switches (MX or Choc)
