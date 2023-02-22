@@ -39,3 +39,7 @@ If you want to customize the firmware:
 3. Navigate to the QMK folder (typically `cd qmk_firmware`).
 4. Type “`make titan:default`” (or replace “default” with the name of your new keymap) and it should compile.
 5. Type “`make titan:default:flash`" (or replace flash with “`dfu`”) to flash it.
+
+If you're using a KB2040 or similar controller, you'll need to use the [Converters](https://github.com/qmk/qmk_firmware/blob/4020674163fc80914059c4c9c3be5c0ae00bd150/docs/feature_converters.md) feature, so for example compiling and flashing for a KB2040 would go as follows:
+
+`qmk flash -c -kb titan -km default -e CONVERT_TO=kb2040`
