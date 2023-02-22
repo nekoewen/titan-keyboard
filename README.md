@@ -3,12 +3,12 @@ The Titan is a keyboard for playing video games, particularly but not exclusivel
 
 ## Bill of Materials
 - Pro Micro (or a compatible microcontroller, such as an Elite-C, BIT-C, KB2040, etc.) with headers
-- 17 1N4148 through-hole diodes
-- 17 key switches (MX or Choc)
-- 17 keycaps; 15 should be 1u, and two should be 1.5u
-- M2 standoffs
-- M2 screws
-- Adhesive rubber feet
+- 17x 1N4148 through-hole diodes
+- 17x key switches (MX or Choc)
+- 17x keycaps; 15 should be 1u, and two should be 1.5u
+- 9x M2 standoffs
+- 18x M2 screws
+- 4 or more adhesive rubber feet
 - 2-pin tactile reset switch (optional)
 - EC11 encoder switch with knob (optional)
 - WS2182B LED strip and 3 wires (optional)
@@ -33,7 +33,7 @@ You can find a .hex file of the default Titan firmware in this repository. If yo
 5. Bridge the GND and RST pins with a metal object (or if it’s already soldered in place, press the reset switch).
 6. QMK Toolbox should automatically flash the firmware for you!
 
-If you do want to customize the firmware:
+If you want to customize the firmware:
 1. Copy the “titan” folder from the firmware folder here into the “keyboards” folder of your QMK installation. You can modify the files in this folder as desired.
 2. Open a terminal window (for your OS if you’re using macOS or Linux, or QMK MSYS if you’re using windows).
 3. Navigate to the QMK folder (typically `cd qmk_firmware`).
