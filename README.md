@@ -1,5 +1,5 @@
 # The Titan
-The Titan is a keyboard for playing video games, particularly but not exclusively fighting games. The design mixes in bits of the Sega Saturn controller (hence I named it after one of Saturn’s moons) and Hitbox controllers.
+The Titan is a QMK-powered keyboard for playing video games, particularly but not exclusively fighting games. The design mixes in bits of the Sega Saturn controller (hence I named it after one of Saturn’s moons) and Hitbox controllers.
 
 ## Bill of Materials
 - Pro Micro (or a compatible microcontroller, such as an Elite-C, BIT-C, KB2040, etc.) with headers
@@ -12,6 +12,13 @@ The Titan is a keyboard for playing video games, particularly but not exclusivel
 - 2-pin tactile reset switch (optional)
 - EC11 encoder switch with knob (optional)
 - WS2182B LED strip and 3 wires (optional)
+
+## Tools
+- Soldering iron with solder
+- Wire clippers
+- Wire stripper (if including an LED strip)
+- Screwdriver
+- Diode bending tool (optional; I use [this one](https://www.thingiverse.com/thing:4332520) BTW)
 
 ## Build Guide
 1. Begin with the diodes. Bend the leads, insert them through the holes (the cathode is marked with a black line and should go on the square pad, so that the line on the diode matches the one printed on the PCB). Solder each diode, then use clippers to remove the excess leads.
@@ -26,7 +33,7 @@ The Titan is a keyboard for playing video games, particularly but not exclusivel
 
 ## Firmware
 You can find a .hex file of the default Titan firmware in this repository. If you don’t have any need to customize the layout, you can just download this and flash it to your Pro Micro.
-1. Install QMK Toolbox if you haven’t already.
+1. Install [QMK Toolbox](https://github.com/qmk/qmk_toolbox) if you haven’t already.
 2. Open titan_default.hex.
 3. Click the “Auto-Flash” checkbox.
 4. Plug the Pro Micro into your computer.
@@ -34,12 +41,12 @@ You can find a .hex file of the default Titan firmware in this repository. If yo
 6. QMK Toolbox should automatically flash the firmware for you!
 
 If you want to customize the firmware:
-1. Copy the “titan” folder from the firmware folder here into the “keyboards” folder of your QMK installation. You can modify the files in this folder as desired.
+1. Copy the “titan” folder from the firmware folder here into the “keyboards” folder of your [QMK installation](https://docs.qmk.fm/#/newbs_getting_started). You can modify the files in this folder as desired.
 2. Open a terminal window (for your OS if you’re using macOS or Linux, or [QMK MSYS](https://msys.qmk.fm/) if you’re using Windows).
 3. Navigate to the QMK folder (typically `cd qmk_firmware`).
 4. Type “`make titan:default`” (or replace “default” with the name of your new keymap) and it should compile.
 5. Type “`make titan:default:flash`" (or replace flash with “`dfu`”) to flash it.
 
-If you're using a KB2040 or similar controller, you'll need to use the [Converters](https://github.com/qmk/qmk_firmware/blob/4020674163fc80914059c4c9c3be5c0ae00bd150/docs/feature_converters.md) feature, so for example compiling and flashing for a KB2040 would go as follows:
+If you're using a KB2040 or similar controller, you'll need to use QMK's [Converters](https://github.com/qmk/qmk_firmware/blob/4020674163fc80914059c4c9c3be5c0ae00bd150/docs/feature_converters.md) feature, so for example compiling and flashing for a KB2040 would go as follows:
 
 `qmk flash -c -kb titan -km default -e CONVERT_TO=kb2040`
