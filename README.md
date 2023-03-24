@@ -26,10 +26,11 @@ The Titan is a QMK-powered keyboard for playing video games, particularly but no
 3. Solder the Pro Micro and its header pins to the underside of the board, with the Pro Micro’s components facing the board. You may want to use your clippers to trim off the excess part of the headers. If you’re adding a reset switch, put it into the PCB and solder its pins.
 4. If you’re going to use an EC11 encoder, solder it in place now.
 5. From here you should be able to test the keyboard’s functionality. If you plug it in, it should register as a Titan keyboard, and you can use tweezers or a similar metal object to make contact on the switch pads to create the equivalent of keystrokes. If any of the keys don’t work, check to make sure you have the diodes soldered and facing the right direction, and also that the Pro Micro’s pins are all soldered in.
-6. Put the top plate in place, and start pushing switches in place, though the plate and into the PCB so that each switch’s two leads go through the corresponding holes in the PCB. I like to put switches in the corners, solder them in place, and then fill in the rest of the switches. Once you’ve soldered all of the switches, I recommend testing the keyboard again to be sure that you have in fact soldered all of them. Once that’s done you can go ahead and put on the keycaps.
-7. If you’re including an LED strip for pretty lights, use 3 wires to solder the pads on the PCB to the corresponding ones on the strip. Be sure the DIn lead is going to LED DAT on the board, as they won’t work if you attach it to DOut on the LED strip. If you plug it into your computer now, it should light up!
-8. Use the standoffs and screws to attach the top plate to the bottom plate.
-9. Finally, put some adhesive rubber feet on the bottom. You’re done!
+6. Use screws to attach the standoffs to the top plate. It's a bit easier to do this step now.
+7. Put the top plate in place, and start pushing switches in place, though the plate and into the PCB so that each switch’s two leads go through the corresponding holes in the PCB. I like to put switches in the corners, solder them in place, and then fill in the rest of the switches. Once you’ve soldered all of the switches, I recommend testing the keyboard again to be sure that you have in fact soldered all of them. Once that’s done you can go ahead and put on the keycaps.
+8. If you’re including an LED strip for pretty lights, use 3 wires to solder the pads on the PCB to the corresponding ones on the strip. Be sure the DIn lead is going to LED DAT on the board, as they won’t work if you attach it to DOut on the LED strip. If you plug it into your computer now, it should light up!
+9. Flip the keyboard over, put the bottom plate in place (the placement of the screws make it so you need to orient it correctly), and use more screws to secure it in place.
+10. Finally, put some adhesive rubber feet on the bottom. You’re done!
 
 ## Firmware
 You can find a .hex file of the default Titan firmware in this repository. If you don’t have any need to customize the layout, you can just download this and flash it to your Pro Micro.
