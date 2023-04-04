@@ -1,7 +1,8 @@
 # The Titan
 The Titan is a QMK-powered keyboard for playing video games, particularly but not exclusively fighting games. The design mixes in bits of the Sega Saturn controller (hence I named it after one of Saturn’s moons) and Hitbox controllers.
 
-![A photo of a completed titan, with DSA keycaps](https://github.com/nekoewen/titan-keyboard/blob/main/titan.jpg)
+![A photo of a completed Titan, with DSA keycaps](https://github.com/nekoewen/titan-keyboard/blob/main/titan.jpg)
+![A diagram of the default Titan layout from KLE](https://github.com/nekoewen/titan-keyboard/blob/02daede569e61ab964b96894a5e86afcfc06a7ef/titan%20default%20layout.png)
 
 ## Bill of Materials
 - Pro Micro (or a compatible microcontroller, such as an Elite-C, BIT-C, KB2040, etc.) with headers
